@@ -1,23 +1,23 @@
 //
-//  ClientsScreen.swift
+//  OrdersScreen.swift
 //  dbke
 //
-//  Created by Kirill Efremov on 20.05.2024.
+//  Created by Kirill Efremov on 21.05.2024.
 //
 
 import SwiftUI
 
-struct ClientsScreen: View {
+struct OrdersScreen: View {
     var body: some View {
         List {
-            ClientsTable().listRowInsets(EdgeInsets())
+            OrdersTable().listRowInsets(EdgeInsets())
         }
-        .navigationTitle("Clients")
+        .navigationTitle("Orders")
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 NavigationLink {
-                    ConsoleScreen(table: .clients)
+                    ConsoleScreen(table: .orders)
                 } label: {
                     Text("Console")
                 }
@@ -27,5 +27,5 @@ struct ClientsScreen: View {
 }
 
 #Preview {
-    ClientsScreen()
+    OrdersScreen()
 }

@@ -1,22 +1,17 @@
 //
-//  ClientsTable.swift
+//  OrdersTable.swift
 //  dbke
 //
-//  Created by Kirill Efremov on 20.05.2024.
+//  Created by Kirill Efremov on 21.05.2024.
 //
 
 import SwiftUI
 
-struct ClientsTable: View {
+struct OrdersTable: View {
     @State private var tableHeight: CGFloat = 0
     private let minRowWidth: CGFloat = 60
     
-    let clients = [
-        Client(clientId: 0, name: "Kirill", phone: "79046577579", address: "Address #1"),
-        Client(clientId: 1, name: "Kirill", phone: "79046577579", address: "Address #2"),
-        Client(clientId: 2, name: "Kirill", phone: "79046577579", address: "Address #3"),
-        Client(clientId: 3, name: "Kirill", phone: "79046577579", address: "Address #4"),
-    ]
+    let orders: [Order] = []
     
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
@@ -28,12 +23,12 @@ struct ClientsTable: View {
                         .padding(.trailing)
                     
                     Spacer().frame(maxWidth: .infinity, maxHeight: 1).background(Color.background).padding([.vertical], 1.5)
-                    ForEach(clients) { client in
-                        Text(String(client.clientId))
+                    ForEach(orders) { order in
+                        Text(String(order.orderId))
                             .padding(.leading, 16)
                             .padding(.trailing)
                         
-                        if (clients.lastIndex(where: { $0.id == client.id }) != clients.endIndex - 1) {
+                        if (orders.lastIndex(where: { $0.id == order.id }) != orders.endIndex - 1) {
                             Spacer().frame(maxWidth: .infinity, maxHeight: 1).background(Color.background).padding([.vertical], 1.5)
                         }
                     }
@@ -42,13 +37,13 @@ struct ClientsTable: View {
                 Rectangle().fill(Color.background).frame(width: 1, height: tableHeight)
                 
                 VStack {
-                    Text("Name").fontWeight(.medium).padding(.horizontal)
+                    Text("Client ID").fontWeight(.medium).padding(.horizontal)
                     
                     Spacer().frame(maxWidth: .infinity, maxHeight: 1).background(Color.background).padding([.vertical], 1.5)
-                    ForEach(clients) { client in
-                        Text(String(client.name)).padding(.horizontal)
+                    ForEach(orders) { order in
+                        Text(String(order.clientId)).padding(.horizontal)
                         
-                        if (clients.lastIndex(where: { $0.id == client.id }) != clients.endIndex - 1) {
+                        if (orders.lastIndex(where: { $0.id == order.id }) != orders.endIndex - 1) {
                             Spacer().frame(maxWidth: .infinity, maxHeight: 1).background(Color.background).padding([.vertical], 1.5)
                         }
                     }
@@ -58,13 +53,13 @@ struct ClientsTable: View {
                 
                 
                 VStack {
-                    Text("Phone").fontWeight(.medium).padding(.horizontal)
+                    Text("Service").fontWeight(.medium).padding(.horizontal)
                     
                     Spacer().frame(maxWidth: .infinity, maxHeight: 1).background(Color.background).padding([.vertical], 1.5)
-                    ForEach(clients) { client in
-                        Text(String(client.phone)).padding(.horizontal)
+                    ForEach(orders) { order in
+                        Text(order.service).padding(.horizontal)
                         
-                        if (clients.lastIndex(where: { $0.id == client.id }) != clients.endIndex - 1) {
+                        if (orders.lastIndex(where: { $0.id == order.id }) != orders.endIndex - 1) {
                             Spacer().frame(maxWidth: .infinity, maxHeight: 1).background(Color.background).padding([.vertical], 1.5)
                         }
                     }
@@ -73,18 +68,18 @@ struct ClientsTable: View {
                 Rectangle().fill(Color.background).frame(width: 1, height: tableHeight)
                 
                 VStack {
-                    Text("Address")
+                    Text("Price")
                         .fontWeight(.medium)
                         .padding(.trailing, 16)
                         .padding(.leading)
                     
                     Spacer().frame(maxWidth: .infinity, maxHeight: 1).background(Color.background).padding([.vertical], 1.5)
-                    ForEach(clients) { client in
-                        Text(String(client.address))
+                    ForEach(orders) { order in
+                        Text(String(order.price))
                             .padding(.trailing, 16)
                             .padding(.leading)
                         
-                        if (clients.lastIndex(where: { $0.id == client.id }) != clients.endIndex - 1) {
+                        if (orders.lastIndex(where: { $0.id == order.id }) != orders.endIndex - 1) {
                             Spacer().frame(maxWidth: .infinity, maxHeight: 1).background(Color.background).padding([.vertical], 1.5)
                         }
                     }
@@ -106,6 +101,6 @@ struct ClientsTable: View {
 
 #Preview {
     List {
-        ClientsTable().listRowInsets(EdgeInsets())
+        OrdersTable().listRowInsets(EdgeInsets())
     }
 }

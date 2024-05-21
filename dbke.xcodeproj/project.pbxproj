@@ -15,6 +15,34 @@
 		53D38F532BFBE07B003DABBA /* TablesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D38F522BFBE07B003DABBA /* TablesScreen.swift */; };
 		53D38F552BFBE115003DABBA /* ClientsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D38F542BFBE115003DABBA /* ClientsScreen.swift */; };
 		53D38F572BFBE5FA003DABBA /* TableCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D38F562BFBE5FA003DABBA /* TableCard.swift */; };
+		53DCA33C2BFD1AA000BC5140 /* ConsoleScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA33B2BFD1AA000BC5140 /* ConsoleScreen.swift */; };
+		53DCA33E2BFD22AA00BC5140 /* FullBackupsFrequencyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA33D2BFD22AA00BC5140 /* FullBackupsFrequencyScreen.swift */; };
+		53DCA3402BFD250100BC5140 /* TransactionLogsFrequencyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA33F2BFD250100BC5140 /* TransactionLogsFrequencyScreen.swift */; };
+		53DCA3422BFD266800BC5140 /* BackupsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA3412BFD266800BC5140 /* BackupsScreen.swift */; };
+		53DCA3482BFDF87200BC5140 /* DifferentialBackupsFrequencyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA3472BFDF87200BC5140 /* DifferentialBackupsFrequencyScreen.swift */; };
+		53DCA34F2BFDFCEA00BC5140 /* BackupType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA34E2BFDFCEA00BC5140 /* BackupType.swift */; };
+		53DCA3522BFE040C00BC5140 /* ClientDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA3512BFE040C00BC5140 /* ClientDecodable.swift */; };
+		53DCA3542BFE042200BC5140 /* OrderDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA3532BFE042200BC5140 /* OrderDecodable.swift */; };
+		53DCA3592BFE052D00BC5140 /* BackupDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA3582BFE052D00BC5140 /* BackupDecodable.swift */; };
+		53DCA35C2BFE082200BC5140 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA35B2BFE082200BC5140 /* Client.swift */; };
+		53DCA35E2BFE084600BC5140 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA35D2BFE084600BC5140 /* Order.swift */; };
+		53DCA3602BFE094C00BC5140 /* RestoreDatabaseEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA35F2BFE094C00BC5140 /* RestoreDatabaseEncodable.swift */; };
+		53DCA3642BFE09BA00BC5140 /* RestoreDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA3632BFE09BA00BC5140 /* RestoreDatabase.swift */; };
+		53DCA3662BFE0A1400BC5140 /* RestoreDatabaseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA3652BFE0A1400BC5140 /* RestoreDatabaseMapper.swift */; };
+		53DCA3682BFE0AD700BC5140 /* SqlRequestEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA3672BFE0AD700BC5140 /* SqlRequestEncodable.swift */; };
+		53DCA36A2BFE0AF200BC5140 /* SqlRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA3692BFE0AF200BC5140 /* SqlRequest.swift */; };
+		53DCA36C2BFE0B0500BC5140 /* SqlRequestMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA36B2BFE0B0500BC5140 /* SqlRequestMapper.swift */; };
+		53DCA36E2BFE0B7600BC5140 /* ScheduleFrequencyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA36D2BFE0B7600BC5140 /* ScheduleFrequencyEncodable.swift */; };
+		53DCA3702BFE0BDF00BC5140 /* Backup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA36F2BFE0BDF00BC5140 /* Backup.swift */; };
+		53DCA3722BFE0C3C00BC5140 /* BackupMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA3712BFE0C3C00BC5140 /* BackupMapper.swift */; };
+		53DCA3742BFE0E4C00BC5140 /* BackupRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA3732BFE0E4C00BC5140 /* BackupRepository.swift */; };
+		53DCA3782BFE0F6C00BC5140 /* DatabaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA3772BFE0F6C00BC5140 /* DatabaseRepository.swift */; };
+		53DCA37A2BFE114100BC5140 /* SchedulerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA3792BFE114100BC5140 /* SchedulerRepository.swift */; };
+		53DCA37D2BFE11FC00BC5140 /* FrequencySchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA37C2BFE11FC00BC5140 /* FrequencySchedule.swift */; };
+		53DCA3822BFE12B600BC5140 /* FrequencyScheduleEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA3812BFE12B600BC5140 /* FrequencyScheduleEncodable.swift */; };
+		53EF28782BFCBCCB00146742 /* ConfigureScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EF28772BFCBCCB00146742 /* ConfigureScreen.swift */; };
+		53EF287A2BFCC24700146742 /* OrdersTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EF28792BFCC24700146742 /* OrdersTable.swift */; };
+		53EF287C2BFCD7E800146742 /* OrdersScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EF287B2BFCD7E800146742 /* OrdersScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +55,34 @@
 		53D38F522BFBE07B003DABBA /* TablesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablesScreen.swift; sourceTree = "<group>"; };
 		53D38F542BFBE115003DABBA /* ClientsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientsScreen.swift; sourceTree = "<group>"; };
 		53D38F562BFBE5FA003DABBA /* TableCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCard.swift; sourceTree = "<group>"; };
+		53DCA33B2BFD1AA000BC5140 /* ConsoleScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleScreen.swift; sourceTree = "<group>"; };
+		53DCA33D2BFD22AA00BC5140 /* FullBackupsFrequencyScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullBackupsFrequencyScreen.swift; sourceTree = "<group>"; };
+		53DCA33F2BFD250100BC5140 /* TransactionLogsFrequencyScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionLogsFrequencyScreen.swift; sourceTree = "<group>"; };
+		53DCA3412BFD266800BC5140 /* BackupsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupsScreen.swift; sourceTree = "<group>"; };
+		53DCA3472BFDF87200BC5140 /* DifferentialBackupsFrequencyScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferentialBackupsFrequencyScreen.swift; sourceTree = "<group>"; };
+		53DCA34E2BFDFCEA00BC5140 /* BackupType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupType.swift; sourceTree = "<group>"; };
+		53DCA3512BFE040C00BC5140 /* ClientDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientDecodable.swift; sourceTree = "<group>"; };
+		53DCA3532BFE042200BC5140 /* OrderDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDecodable.swift; sourceTree = "<group>"; };
+		53DCA3582BFE052D00BC5140 /* BackupDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupDecodable.swift; sourceTree = "<group>"; };
+		53DCA35B2BFE082200BC5140 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		53DCA35D2BFE084600BC5140 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		53DCA35F2BFE094C00BC5140 /* RestoreDatabaseEncodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoreDatabaseEncodable.swift; sourceTree = "<group>"; };
+		53DCA3632BFE09BA00BC5140 /* RestoreDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoreDatabase.swift; sourceTree = "<group>"; };
+		53DCA3652BFE0A1400BC5140 /* RestoreDatabaseMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoreDatabaseMapper.swift; sourceTree = "<group>"; };
+		53DCA3672BFE0AD700BC5140 /* SqlRequestEncodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqlRequestEncodable.swift; sourceTree = "<group>"; };
+		53DCA3692BFE0AF200BC5140 /* SqlRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqlRequest.swift; sourceTree = "<group>"; };
+		53DCA36B2BFE0B0500BC5140 /* SqlRequestMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqlRequestMapper.swift; sourceTree = "<group>"; };
+		53DCA36D2BFE0B7600BC5140 /* ScheduleFrequencyEncodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleFrequencyEncodable.swift; sourceTree = "<group>"; };
+		53DCA36F2BFE0BDF00BC5140 /* Backup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backup.swift; sourceTree = "<group>"; };
+		53DCA3712BFE0C3C00BC5140 /* BackupMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupMapper.swift; sourceTree = "<group>"; };
+		53DCA3732BFE0E4C00BC5140 /* BackupRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupRepository.swift; sourceTree = "<group>"; };
+		53DCA3772BFE0F6C00BC5140 /* DatabaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseRepository.swift; sourceTree = "<group>"; };
+		53DCA3792BFE114100BC5140 /* SchedulerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulerRepository.swift; sourceTree = "<group>"; };
+		53DCA37C2BFE11FC00BC5140 /* FrequencySchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequencySchedule.swift; sourceTree = "<group>"; };
+		53DCA3812BFE12B600BC5140 /* FrequencyScheduleEncodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequencyScheduleEncodable.swift; sourceTree = "<group>"; };
+		53EF28772BFCBCCB00146742 /* ConfigureScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureScreen.swift; sourceTree = "<group>"; };
+		53EF28792BFCC24700146742 /* OrdersTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTable.swift; sourceTree = "<group>"; };
+		53EF287B2BFCD7E800146742 /* OrdersScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +96,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5344E61D2BFE17400086B530 /* mapper */ = {
+			isa = PBXGroup;
+			children = (
+				53DCA3652BFE0A1400BC5140 /* RestoreDatabaseMapper.swift */,
+				53DCA36B2BFE0B0500BC5140 /* SqlRequestMapper.swift */,
+				53DCA3712BFE0C3C00BC5140 /* BackupMapper.swift */,
+			);
+			path = mapper;
+			sourceTree = "<group>";
+		};
 		53D38F342BFBCE34003DABBA = {
 			isa = PBXGroup;
 			children = (
@@ -59,10 +125,13 @@
 		53D38F3F2BFBCE34003DABBA /* dbke */ = {
 			isa = PBXGroup;
 			children = (
+				53DCA3552BFE046400BC5140 /* data */,
+				53DCA3562BFE046800BC5140 /* domain */,
+				53DCA3572BFE047000BC5140 /* presentation */,
 				53D38F512BFBE069003DABBA /* screens */,
-				53D38F402BFBCE34003DABBA /* dbkeApp.swift */,
 				53D38F4E2BFBDFF2003DABBA /* ui */,
 				53D38F422BFBCE34003DABBA /* ContentView.swift */,
+				53D38F402BFBCE34003DABBA /* dbkeApp.swift */,
 				53D38F442BFBCE35003DABBA /* Assets.xcassets */,
 				53D38F462BFBCE35003DABBA /* Preview Content */,
 			);
@@ -81,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				53D38F4F2BFBE019003DABBA /* ClientsTable.swift */,
+				53EF28792BFCC24700146742 /* OrdersTable.swift */,
 				53D38F562BFBE5FA003DABBA /* TableCard.swift */,
 			);
 			path = ui;
@@ -91,8 +161,102 @@
 			children = (
 				53D38F522BFBE07B003DABBA /* TablesScreen.swift */,
 				53D38F542BFBE115003DABBA /* ClientsScreen.swift */,
+				53EF28772BFCBCCB00146742 /* ConfigureScreen.swift */,
+				53EF287B2BFCD7E800146742 /* OrdersScreen.swift */,
+				53DCA33B2BFD1AA000BC5140 /* ConsoleScreen.swift */,
+				53DCA33D2BFD22AA00BC5140 /* FullBackupsFrequencyScreen.swift */,
+				53DCA33F2BFD250100BC5140 /* TransactionLogsFrequencyScreen.swift */,
+				53DCA3412BFD266800BC5140 /* BackupsScreen.swift */,
+				53DCA3472BFDF87200BC5140 /* DifferentialBackupsFrequencyScreen.swift */,
 			);
 			path = screens;
+			sourceTree = "<group>";
+		};
+		53DCA3502BFE040400BC5140 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				53DCA3802BFE12AB00BC5140 /* scheduler */,
+				53DCA3612BFE096200BC5140 /* tables */,
+				53DCA3582BFE052D00BC5140 /* BackupDecodable.swift */,
+				53DCA35F2BFE094C00BC5140 /* RestoreDatabaseEncodable.swift */,
+				53DCA3672BFE0AD700BC5140 /* SqlRequestEncodable.swift */,
+				53DCA36D2BFE0B7600BC5140 /* ScheduleFrequencyEncodable.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		53DCA3552BFE046400BC5140 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				5344E61D2BFE17400086B530 /* mapper */,
+				53DCA3502BFE040400BC5140 /* models */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		53DCA3562BFE046800BC5140 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				53DCA35A2BFE071200BC5140 /* models */,
+				53DCA3732BFE0E4C00BC5140 /* BackupRepository.swift */,
+				53DCA3772BFE0F6C00BC5140 /* DatabaseRepository.swift */,
+				53DCA3792BFE114100BC5140 /* SchedulerRepository.swift */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		53DCA3572BFE047000BC5140 /* presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = presentation;
+			sourceTree = "<group>";
+		};
+		53DCA35A2BFE071200BC5140 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				53DCA37B2BFE11E400BC5140 /* scheduler */,
+				53DCA3622BFE096F00BC5140 /* tables */,
+				53DCA34E2BFDFCEA00BC5140 /* BackupType.swift */,
+				53DCA3632BFE09BA00BC5140 /* RestoreDatabase.swift */,
+				53DCA3692BFE0AF200BC5140 /* SqlRequest.swift */,
+				53DCA36F2BFE0BDF00BC5140 /* Backup.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		53DCA3612BFE096200BC5140 /* tables */ = {
+			isa = PBXGroup;
+			children = (
+				53DCA3512BFE040C00BC5140 /* ClientDecodable.swift */,
+				53DCA3532BFE042200BC5140 /* OrderDecodable.swift */,
+			);
+			path = tables;
+			sourceTree = "<group>";
+		};
+		53DCA3622BFE096F00BC5140 /* tables */ = {
+			isa = PBXGroup;
+			children = (
+				53DCA35B2BFE082200BC5140 /* Client.swift */,
+				53DCA35D2BFE084600BC5140 /* Order.swift */,
+			);
+			path = tables;
+			sourceTree = "<group>";
+		};
+		53DCA37B2BFE11E400BC5140 /* scheduler */ = {
+			isa = PBXGroup;
+			children = (
+				53DCA37C2BFE11FC00BC5140 /* FrequencySchedule.swift */,
+			);
+			path = scheduler;
+			sourceTree = "<group>";
+		};
+		53DCA3802BFE12AB00BC5140 /* scheduler */ = {
+			isa = PBXGroup;
+			children = (
+				53DCA3812BFE12B600BC5140 /* FrequencyScheduleEncodable.swift */,
+			);
+			path = scheduler;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,11 +329,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53DCA3402BFD250100BC5140 /* TransactionLogsFrequencyScreen.swift in Sources */,
+				53DCA3592BFE052D00BC5140 /* BackupDecodable.swift in Sources */,
 				53D38F532BFBE07B003DABBA /* TablesScreen.swift in Sources */,
+				53DCA3682BFE0AD700BC5140 /* SqlRequestEncodable.swift in Sources */,
+				53DCA37D2BFE11FC00BC5140 /* FrequencySchedule.swift in Sources */,
+				53DCA3602BFE094C00BC5140 /* RestoreDatabaseEncodable.swift in Sources */,
 				53D38F502BFBE019003DABBA /* ClientsTable.swift in Sources */,
 				53D38F572BFBE5FA003DABBA /* TableCard.swift in Sources */,
+				53DCA34F2BFDFCEA00BC5140 /* BackupType.swift in Sources */,
+				53DCA35E2BFE084600BC5140 /* Order.swift in Sources */,
+				53EF287A2BFCC24700146742 /* OrdersTable.swift in Sources */,
+				53DCA3702BFE0BDF00BC5140 /* Backup.swift in Sources */,
+				53DCA3782BFE0F6C00BC5140 /* DatabaseRepository.swift in Sources */,
+				53DCA37A2BFE114100BC5140 /* SchedulerRepository.swift in Sources */,
 				53D38F432BFBCE34003DABBA /* ContentView.swift in Sources */,
+				53DCA3422BFD266800BC5140 /* BackupsScreen.swift in Sources */,
+				53DCA3822BFE12B600BC5140 /* FrequencyScheduleEncodable.swift in Sources */,
+				53DCA33E2BFD22AA00BC5140 /* FullBackupsFrequencyScreen.swift in Sources */,
+				53DCA36E2BFE0B7600BC5140 /* ScheduleFrequencyEncodable.swift in Sources */,
+				53DCA3662BFE0A1400BC5140 /* RestoreDatabaseMapper.swift in Sources */,
+				53DCA3482BFDF87200BC5140 /* DifferentialBackupsFrequencyScreen.swift in Sources */,
+				53DCA3522BFE040C00BC5140 /* ClientDecodable.swift in Sources */,
+				53DCA33C2BFD1AA000BC5140 /* ConsoleScreen.swift in Sources */,
 				53D38F552BFBE115003DABBA /* ClientsScreen.swift in Sources */,
+				53EF28782BFCBCCB00146742 /* ConfigureScreen.swift in Sources */,
+				53DCA36A2BFE0AF200BC5140 /* SqlRequest.swift in Sources */,
+				53DCA3642BFE09BA00BC5140 /* RestoreDatabase.swift in Sources */,
+				53EF287C2BFCD7E800146742 /* OrdersScreen.swift in Sources */,
+				53DCA3742BFE0E4C00BC5140 /* BackupRepository.swift in Sources */,
+				53DCA36C2BFE0B0500BC5140 /* SqlRequestMapper.swift in Sources */,
+				53DCA3542BFE042200BC5140 /* OrderDecodable.swift in Sources */,
+				53DCA35C2BFE082200BC5140 /* Client.swift in Sources */,
+				53DCA3722BFE0C3C00BC5140 /* BackupMapper.swift in Sources */,
 				53D38F412BFBCE34003DABBA /* dbkeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -22,8 +22,7 @@ struct TablesScreen: View {
                 }
                 
                 NavigationLink {
-                    HStack {}
-                    .navigationTitle("Orders")
+                    OrdersScreen()
                 } label: {
                     TableCard(
                         title: "Orders",
@@ -38,14 +37,14 @@ struct TablesScreen: View {
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 NavigationLink {
-                    HStack {}
-                    .navigationTitle("Configure")
+                    ConfigureScreen()
                 } label: {
                     Text("Configure")
                 }
             }
         }
         .navigationTitle("DBKE")
+        .navigationBarTitleDisplayMode(.automatic)
     }
 }
 
