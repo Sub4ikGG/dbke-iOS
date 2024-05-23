@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ConfigureScreen: View {
+    @StateObject private var viewModel = ConfigureViewModel()
     @State private var showTruncateAlert = false
     
     var body: some View {
@@ -24,7 +25,7 @@ struct ConfigureScreen: View {
             
             Section {
                 NavigationLink {
-                    FullBackupsFrequencyScreen()
+                    FullBackupsSchedulerScreen()
                 } label: {
                     HStack {
                         Image(.backupsFrequency)
@@ -33,7 +34,7 @@ struct ConfigureScreen: View {
                 }
                 
                 NavigationLink {
-                    DifferentialBackupsFrequencyScreen()
+                    DifferentialBackupsSchedulerScreen()
                 } label: {
                     HStack {
                         Image(.differentialBackupsFrequency)
@@ -42,7 +43,7 @@ struct ConfigureScreen: View {
                 }
                 
                 NavigationLink {
-                    TransactionLogsFrequencyScreen()
+                    TransactionLogsSchedulerScreen()
                 } label: {
                     HStack {
                         Image(.transactionLogsFrequency)
@@ -67,7 +68,9 @@ struct ConfigureScreen: View {
             "Truncate database",
             isPresented: $showTruncateAlert,
             actions: {
-                Button("Truncate", role: .destructive) {}
+                Button("Truncate", role: .destructive) {
+                    viewModel.truncateDatabase()
+                }
                 Button("Cancel", role: .cancel) {}
             },
             message: {

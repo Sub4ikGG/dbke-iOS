@@ -9,7 +9,6 @@ import Foundation
 
 class ConsoleViewModel : ViewModel <ConsoleState, ConsoleIntent, ShowAlertEffect> {
     private let databaseRepository: DatabaseRepository
-    private let consoleQueue = DispatchQueue.global(qos: .userInitiated)
     
     init(databaseRepository: DatabaseRepository = DatabaseRepositoryImpl()) {
         self.databaseRepository = databaseRepository
@@ -19,22 +18,29 @@ class ConsoleViewModel : ViewModel <ConsoleState, ConsoleIntent, ShowAlertEffect
     override func obtainIntent(intent: ConsoleIntent) {
         updateState(state: .loading)
         
-        consoleQueue.async {
-            Task {
-                switch (intent) {
-                case .executeSql(let sqlQuery):
-                    await self.executeSql(sqlQuery: sqlQuery)
-                }
+        Task {
+            switch (intent) {
+            case .executeSql(let sqlQuery):
+                await self.executeSql(sqlQuery: sqlQuery)
             }
         }
     }
     
     private func executeSql(sqlQuery: String) async {
         do {
-            let response = try await databaseRepository.executeSql(sqlRequest: SqlRequest(sqlQuery: sqlQuery))
+            let response = try await databaseRepository.executeSql(
+                sqlRequest: SqlRequest(
+                    sqlQuery: sqlQuery
+                        .replacingOccurrences(of: "`", with: "'")
+                        .replacingOccurrences(of: "’", with: "'")
+                        .replacingOccurrences(of: "‘", with: "'")
+                        .replacingOccurrences(of: "\"", with: "'")
+                )
+            )
             
             if (response.code != 200) {
                 updateEffect(effect: ShowAlertEffect.buildErrorAlert(code: response.code, message: response.message))
+                updateState(state: .idle)
                 return
             }
             

@@ -11,4 +11,5 @@ protocol DatabaseRepository {
     func executeSql(sqlRequest: SqlRequest) async throws -> HTTPResponse<String>
     func clients() async throws -> [Client]
     func orders() async throws -> [Order]
+    func truncateDatabase() async
 }

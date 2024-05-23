@@ -22,7 +22,8 @@ class BackupRepositoryImpl : BackupRepository {
     
     func restore(restoreDatabase: RestoreDatabase) async throws -> HTTPResponse<String> {
         return try await HTTPURLSession.response(
-            path: "\(Constants.databaseName)/",
+            httpMethod: "PATCH",
+            path: "\(Constants.databaseName)/restore",
             parameters: ["position": "\(restoreDatabase.position)"]
         )
     }

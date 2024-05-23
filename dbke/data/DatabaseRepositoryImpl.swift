@@ -17,7 +17,9 @@ class DatabaseRepositoryImpl : DatabaseRepository {
     }
     
     func clients() async throws -> [Client] {
-        let httpResponse: HTTPResponse<[ClientDecodable]> = try await HTTPURLSession.response(path: "\(Constants.databaseName)/clients")
+        let httpResponse: HTTPResponse<[ClientDecodable]> = try await HTTPURLSession.response(
+            path: "\(Constants.databaseName)/\(Constants.clientsTableName)"
+        )
         
         guard let clients = httpResponse.data else {
             throw RepositoryException(code: httpResponse.code, message: httpResponse.message)
@@ -27,12 +29,19 @@ class DatabaseRepositoryImpl : DatabaseRepository {
     }
     
     func orders() async throws -> [Order] {
-        let httpResponse: HTTPResponse<[OrderDecodable]> = try await HTTPURLSession.response(path: "\(Constants.databaseName)/orders")
+        let httpResponse: HTTPResponse<[OrderDecodable]> = try await HTTPURLSession.response(
+            path: "\(Constants.databaseName)/\(Constants.ordersTableName)"
+        )
         
         guard let orders = httpResponse.data else {
             throw RepositoryException(code: httpResponse.code, message: httpResponse.message)
         }
         
         return orders.map { TableMapper.map(orderDecodable: $0) }
+    }
+    
+    func truncateDatabase() async {
+        let truncateQuery = "DELETE FROM \(Constants.ordersTableName); DELETE FROM \(Constants.clientsTableName);"
+        let _ = try? await executeSql(sqlRequest: SqlRequest(sqlQuery: truncateQuery))
     }
 }

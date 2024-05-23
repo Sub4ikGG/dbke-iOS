@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ScheduleFrequencyEncodable : Encodable {
+struct BackupFrequencyEncodable : Encodable {
     let databaseName: String
     let intervalInMinutes: String
 }

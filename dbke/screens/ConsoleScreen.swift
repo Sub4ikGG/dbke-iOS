@@ -22,35 +22,40 @@ struct ConsoleScreen: View {
     @State private var alert: ShowAlertEffect? = nil
     
     var body: some View {
-        ZStack {
+        List {
             switch (viewModel.state) {
-                case .idle: EmptyView()
-                case .loading: ProgressView()
-            }
-            
-            List {
+                case .idle:
                 TextField("Enter SQL-command", text: $sqlQuery, axis: .vertical)
                     .textFieldStyle(.roundedBorder)
                     .lineLimit(4...10)
                     .focused($sqlQueryFocus)
-            }
-            .navigationTitle("Console")
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .topBarTrailing) {
-                    if (sqlQuery.replacingOccurrences(of: " ", with: "").replacingOccurrences(of: "\n", with: "").isEmpty) {
-                        Text("Execute").foregroundStyle(Color.gray)
-                    } else {
-                        Button(action: {
-                            viewModel.obtainIntent(intent: .executeSql(sqlQuery: sqlQuery))
-                        }, label: {
-                            Text("Execute")
-                        })
+                    .textInputAutocapitalization(.never)
+                    .autocorrectionDisabled()
+                    .toolbar {
+                        ToolbarItem(placement: .topBarTrailing) {
+                            if (sqlQuery.replacingOccurrences(of: " ", with: "").replacingOccurrences(of: "\n", with: "").isEmpty) {
+                                Text("Execute").foregroundStyle(Color.gray)
+                            } else {
+                                Button(action: {
+                                    viewModel.obtainIntent(intent: .executeSql(sqlQuery: sqlQuery))
+                                }, label: {
+                                    Text("Execute")
+                                })
+                            }
+                        }
                     }
-                }
+                
+                case .loading:
+                    ProgressView()
+                        .id(UUID())
             }
         }
-        .alert(alert?.title ?? "", isPresented: $showConsoleAlert, actions: {}, message: { Text(alert?.message ?? "") })
+        .alert(
+            alert?.title ?? "",
+            isPresented: $showConsoleAlert,
+            actions: {},
+            message: { Text(alert?.message ?? "") }
+        )
         .onReceive(viewModel.$effect, perform: { effect in
             if let alert = effect {
                 showAlert(alert: alert)
@@ -59,6 +64,8 @@ struct ConsoleScreen: View {
         .onAppear {
             sqlQueryFocus.toggle()
         }
+        .navigationTitle("Console")
+        .navigationBarTitleDisplayMode(.inline)
     }
     
     private func showAlert(alert: ShowAlertEffect) {

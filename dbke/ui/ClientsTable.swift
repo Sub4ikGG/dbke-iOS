@@ -11,12 +11,7 @@ struct ClientsTable: View {
     @State private var tableHeight: CGFloat = 0
     private let minRowWidth: CGFloat = 60
     
-    let clients = [
-        Client(clientId: 0, name: "Kirill", phone: "79046577579", address: "Address #1"),
-        Client(clientId: 1, name: "Kirill", phone: "79046577579", address: "Address #2"),
-        Client(clientId: 2, name: "Kirill", phone: "79046577579", address: "Address #3"),
-        Client(clientId: 3, name: "Kirill", phone: "79046577579", address: "Address #4"),
-    ]
+    let clients: [Client]
     
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
@@ -106,6 +101,6 @@ struct ClientsTable: View {
 
 #Preview {
     List {
-        ClientsTable().listRowInsets(EdgeInsets())
+        ClientsTable(clients: []).listRowInsets(EdgeInsets())
     }
 }

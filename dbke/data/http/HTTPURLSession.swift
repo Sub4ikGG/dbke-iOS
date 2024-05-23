@@ -8,7 +8,7 @@
 import Foundation
 
 struct HTTPURLSession {
-    private static let maxMessageLength = 64
+    private static let maxMessageLength = 128
     
     public static func response <D> (
         httpMethod: String = "GET",

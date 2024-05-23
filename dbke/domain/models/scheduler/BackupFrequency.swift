@@ -1,5 +1,5 @@
 //
-//  FrequencyScheduleEncodable.swift
+//  FrequencySchedule.swift
 //  dbke
 //
 //  Created by Kirill Efremov on 22.05.2024.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct FrequencyScheduleEncodable : Encodable {
-    let databaseName: String
+struct BackupFrequency {
+    let backupType: BackupType
     let intervalInMinutes: Int
 }

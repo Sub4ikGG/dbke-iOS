@@ -11,7 +11,7 @@ struct OrdersTable: View {
     @State private var tableHeight: CGFloat = 0
     private let minRowWidth: CGFloat = 60
     
-    let orders: [Order] = []
+    let orders: [Order]
     
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
@@ -101,6 +101,6 @@ struct OrdersTable: View {
 
 #Preview {
     List {
-        OrdersTable().listRowInsets(EdgeInsets())
+        OrdersTable(orders: []).listRowInsets(EdgeInsets())
     }
 }

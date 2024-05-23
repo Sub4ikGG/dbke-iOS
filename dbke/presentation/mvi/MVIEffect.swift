@@ -9,6 +9,8 @@ import Foundation
 
 protocol MVIEffect {}
 
+struct EmptyEffect : MVIEffect {}
+
 struct ShowAlertEffect : MVIEffect {
     let title: String
     let message: String
