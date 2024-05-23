@@ -8,5 +8,6 @@
 import Foundation
 
 protocol SchedulerRepository {
-    func schedule(schedule: FrequencySchedule) async throws
+    func schedule(schedule: FrequencySchedule) async throws -> HTTPResponse<String>
+    func schedule(backupType: BackupType) async throws -> HTTPResponse<Int>
 }

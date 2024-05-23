@@ -9,5 +9,5 @@ import Foundation
 
 protocol BackupRepository {
     func backups() async throws -> [Backup]
-    func restore(restoreDatabase: RestoreDatabase) async throws
+    func restore(restoreDatabase: RestoreDatabase) async throws -> HTTPResponse<String>
 }

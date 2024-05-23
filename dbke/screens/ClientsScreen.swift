@@ -17,7 +17,7 @@ struct ClientsScreen: View {
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 NavigationLink {
-                    ConsoleScreen(table: .clients)
+                    ConsoleScreen()
                 } label: {
                     Text("Console")
                 }

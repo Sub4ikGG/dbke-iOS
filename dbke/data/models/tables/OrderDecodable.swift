@@ -11,5 +11,5 @@ struct OrderDecodable : Decodable {
     let orderId: Int
     let clientId: Int
     let service: String
-    let price: String
+    let price: Int
 }

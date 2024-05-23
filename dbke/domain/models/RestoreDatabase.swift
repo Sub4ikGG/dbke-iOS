@@ -8,6 +8,5 @@
 import Foundation
 
 struct RestoreDatabase {
-    let databaseName: String
     let position: Int
 }
