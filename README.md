@@ -23,11 +23,12 @@ I used Combine to manage the state of the application.
 https://github.com/Sub4ikGG/dbke-iOS/assets/98654420/f467df3b-2397-4e6f-a1bf-8d41cd05711a
 
 ## Screenshots
-![simulator_screenshot_58BFA71E-C576-4493-87B8-7324D85D8377](https://github.com/Sub4ikGG/dbke-iOS/assets/98654420/d5206230-791a-4f26-84f1-2ee1fd84cb2d)
-![simulator_screenshot_981670AB-77B5-4C0A-9F7A-B47362F43688](https://github.com/Sub4ikGG/dbke-iOS/assets/98654420/8195625d-f92b-41d4-bb63-5da208a95639)
-![simulator_screenshot_701452EB-F55E-4420-86F8-A517A524DF0B](https://github.com/Sub4ikGG/dbke-iOS/assets/98654420/7d17f7df-231f-4a59-9839-3d85b6451fcb)
-![simulator_screenshot_ECABFF8D-E5BE-4F08-B088-71D6E465D9B5](https://github.com/Sub4ikGG/dbke-iOS/assets/98654420/2ed6c996-2324-436f-85c2-ef302bcead46)
-![simulator_screenshot_F720F9FE-3175-4209-82DE-95198FC802DE](https://github.com/Sub4ikGG/dbke-iOS/assets/98654420/714c6aa1-5798-4de9-887c-b09bfccc5959)
-![simulator_screenshot_73073FC6-0668-4BEE-8273-B44D2078E5B5](https://github.com/Sub4ikGG/dbke-iOS/assets/98654420/c470801d-25ad-49df-9c0a-b66c94571c0e)
-![simulator_screenshot_29A2B907-9E7C-4335-8671-99E0DA0229EC](https://github.com/Sub4ikGG/dbke-iOS/assets/98654420/a39bab46-f8ad-4095-b880-f67a09245153)
+<img src="https://github.com/Sub4ikGG/dbke-iOS/assets/98654420/d5206230-791a-4f26-84f1-2ee1fd84cb2d" width="300">
+<img src="https://github.com/Sub4ikGG/dbke-iOS/assets/98654420/d5206230-791a-4f26-84f1-2ee1fd84cb2d" width="300">
+<img src="https://github.com/Sub4ikGG/dbke-iOS/assets/98654420/8195625d-f92b-41d4-bb63-5da208a95639" width="300">
+<img src="https://github.com/Sub4ikGG/dbke-iOS/assets/98654420/7d17f7df-231f-4a59-9839-3d85b6451fcb" width="300">
+<img src="https://github.com/Sub4ikGG/dbke-iOS/assets/98654420/2ed6c996-2324-436f-85c2-ef302bcead46" width="300">
+<img src="https://github.com/Sub4ikGG/dbke-iOS/assets/98654420/714c6aa1-5798-4de9-887c-b09bfccc5959" width="300">
+<img src="https://github.com/Sub4ikGG/dbke-iOS/assets/98654420/c470801d-25ad-49df-9c0a-b66c94571c0e" width="300">
+<img src="https://github.com/Sub4ikGG/dbke-iOS/assets/98654420/a39bab46-f8ad-4095-b880-f67a09245153" width="300">
 
