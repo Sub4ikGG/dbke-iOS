@@ -1,4 +1,4 @@
-# DBKE - iOS application, "Database restore function module"
+# DBKE - iOS application, database restore function module
 At the moment of launching the client application, the application accesses the business logic to obtain table data. A console is provided for each table where the user can run their SQL queries. 
 
 The user can also work with the database configuration: view backups and restore the database manually using each backup, adjust the frequency of full backups, differential backups and transaction logs, as well as completely clear the database data.
