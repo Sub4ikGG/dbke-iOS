@@ -24,7 +24,6 @@ https://github.com/Sub4ikGG/dbke-iOS/assets/98654420/f467df3b-2397-4e6f-a1bf-8d4
 
 ## Screenshots
 <img src="https://github.com/Sub4ikGG/dbke-iOS/assets/98654420/d5206230-791a-4f26-84f1-2ee1fd84cb2d" width="300">
-<img src="https://github.com/Sub4ikGG/dbke-iOS/assets/98654420/d5206230-791a-4f26-84f1-2ee1fd84cb2d" width="300">
 <img src="https://github.com/Sub4ikGG/dbke-iOS/assets/98654420/8195625d-f92b-41d4-bb63-5da208a95639" width="300">
 <img src="https://github.com/Sub4ikGG/dbke-iOS/assets/98654420/7d17f7df-231f-4a59-9839-3d85b6451fcb" width="300">
 <img src="https://github.com/Sub4ikGG/dbke-iOS/assets/98654420/2ed6c996-2324-436f-85c2-ef302bcead46" width="300">
